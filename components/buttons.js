@@ -1,15 +1,17 @@
 import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 
-const GreyButton = ({numbers}) => {
+const GreyButton = ({ numbers }) => {
   return (
-    <TouchableOpacity onPress={console.log}>
+    <TouchableOpacity onPress={console.log()}>
       <View style={styles.greyButton}>
         <Text style={styles.buttonNumber}>{numbers}</Text>
       </View>
     </TouchableOpacity>
   );
 };
+
+export default GreyButton;
 
 const styles = StyleSheetList.create({
   buttonNumber: {
@@ -31,5 +33,3 @@ const styles = StyleSheetList.create({
     elevation: 24,
   },
 });
-
-export default GreyButton;

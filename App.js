@@ -2,9 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
-import { Entypo } from "@expo/vector-icons"; 
+import { Entypo } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function App() {
   return (
@@ -24,22 +24,22 @@ export default function App() {
 
       <View style={[styles.buttonsSets, styles.containerColumn]}>
         <View style={styles.containerRow}>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("C")}>
             <View style={styles.greyButton}>
               <Text style={styles.buttonNumber}>C</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("+/-")}>
             <View style={styles.greyButton}>
               <Text style={styles.buttonNumber}>+/-</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("%")}>
             <View style={styles.greyButton}>
               <Text style={styles.buttonNumber}>%</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("/")}>
             <View style={styles.orangeButton}>
               <MaterialCommunityIcons name="division" size={35} color="white" />
             </View>
@@ -47,22 +47,22 @@ export default function App() {
         </View>
 
         <View style={styles.containerRow}>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("7")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>7</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("8")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>8</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("9")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>9</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("X")}>
             <View style={styles.orangeButton}>
               <Entypo name="cross" size={35} color="white" />
             </View>
@@ -70,22 +70,22 @@ export default function App() {
         </View>
 
         <View style={styles.containerRow}>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("4")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>4</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("5")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>5</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("6")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>6</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("-")}>
             <View style={styles.orangeButton}>
               <AntDesign name="minus" size={35} color="white" />
             </View>
@@ -93,22 +93,22 @@ export default function App() {
         </View>
 
         <View style={styles.containerRow}>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("1")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>1</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("2")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>2</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("3")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>3</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("+")}>
             <View style={styles.orangeButton}>
               <AntDesign name="plus" size={35} color="white" />
             </View>
@@ -116,17 +116,17 @@ export default function App() {
         </View>
 
         <View style={styles.containerRow}>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("0")}>
             <View style={styles.zeroButton}>
               <Text style={styles.buttonNumber}>0</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log(".")}>
             <View style={styles.whiteButton}>
               <Text style={styles.buttonNumber}>.</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={console.log}>
+          <TouchableOpacity onPress={() => console.log("=")}>
             <View style={styles.orangeButton}>
               <FontAwesome5 name="equals" size={24} color="white" />
             </View>
